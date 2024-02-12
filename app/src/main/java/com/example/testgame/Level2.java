@@ -23,6 +23,8 @@ import java.util.Random;
 public class Level2 extends AppCompatActivity {
 
     Dialog dialog;
+    Dialog dialogEnd2;
+
 
     public int numLeft; //Переменная для левой картинки
     public int numRight; //Переменная для правой картинки
@@ -37,7 +39,7 @@ public class Level2 extends AppCompatActivity {
 
         //Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1); //Установили текст
+        text_levels.setText(R.string.level2); //Установили текст
 
         final ImageView imgleft = (ImageView)findViewById(R.id.imgleft);
         //round corner
@@ -55,7 +57,7 @@ public class Level2 extends AppCompatActivity {
         //Dialog window
         dialog = new Dialog(this); //создаем окно
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //Скрываем заголовок
-        dialog.setContentView(R.layout.previewdialog); //Путь к макету
+        dialog.setContentView(R.layout.previewdialog2); //Путь к макету
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));// Прозрачный фон
         dialog.setCancelable(false); //Кнопка назад откл
         //Кнопка которая закрывает диалоговое окно - Начало
@@ -79,16 +81,63 @@ public class Level2 extends AppCompatActivity {
         });
         //Кнопка которая закрывает диалоговое окно - Конец
 
-
         //Кнопка "Продолжить" - Начало
         Button btncontinue = (Button)dialog.findViewById(R.id.btncontinue);
-        btncontinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss(); //Закрываем диалоговое окно
-            }
+        btncontinue.setOnClickListener((v) ->{
+            dialog.dismiss(); //Закрываем диалоговое окно
         });
         //Кнопка "Продолжить" - Конец
+
+        //_____________________
+        //Вызов диалогового окна в конце игры
+        //Dialog window
+        dialogEnd2 = new Dialog(this); //создаем окно
+        dialogEnd2.requestWindowFeature(Window.FEATURE_NO_TITLE); //Скрываем заголовок
+        dialogEnd2.setContentView(R.layout.dialogend2); //Путь к макету
+        dialogEnd2.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));// Прозрачный фон
+        dialogEnd2.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.MATCH_PARENT);
+        dialogEnd2.setCancelable(false); //Кнопка назад откл
+        //Кнопка которая закрывает диалоговое окно - Начало
+        TextView btnclose2 = (TextView)dialogEnd2.findViewById(R.id.btnclose);
+        btnclose2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Обрабатываем нажатие кнопки - Начало
+                try {
+                    //Вернуться назад к выбору уровней - Начало
+                    Intent intent = new Intent(Level2.this, GameLevels.class);//Создали намерение для перехода
+                    startActivity(intent);//Старт намерения
+                    finish();//закрыть этот класс
+                    //Вернуться назад к выбору уровней - Конец
+                }catch (Exception e) {
+                    //Здесь кода не будет
+                }
+                dialogEnd2.dismiss();//Закрываем окно
+                //Обрабатываем нажатие кнопки - Конец
+            }
+        });
+        //Кнопка которая закрывает диалоговое окно - Конец
+
+
+        //Кнопка "Продолжить" - Начало
+        Button btncontinue2 = (Button)dialogEnd2.findViewById(R.id.btncontinue);
+        btncontinue2.setOnClickListener(v ->  {
+            try {
+                Intent intent = new Intent(Level2.this, Level3.class);
+                startActivity(intent);
+                finish();
+            }catch (Exception e){
+                //Здесь кода не будет
+            }
+
+            dialogEnd2.dismiss(); //Закрываем диалоговое окно
+        });
+        //Кнопка "Продолжить" - Конец
+
+
+        //_____________________
+
 
         dialog.show();// Показать окно
         //Кнопка "Назад" - Начало
@@ -191,6 +240,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if (count==20){
                         //Выход из уровня
+                        dialogEnd2.show();
                     }else {
                         numLeft = random.nextInt(10);//Генерируем случайное число
                         imgleft.setImageResource(array2.images3[numLeft]);//Достаем картинку
@@ -268,6 +318,7 @@ public class Level2 extends AppCompatActivity {
                     }
                     if (count==20){
                         //Выход из уровня
+                        dialogEnd2.show();
                     }else {
                         numLeft = random.nextInt(10);//Генерируем случайное число
                         imgleft.setImageResource(array2.images3[numLeft]);//Достаем картинку
