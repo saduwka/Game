@@ -2,20 +2,20 @@ package com.example.testgame;
 
 public class Array2 {
     //Массив для 1 уровня - Начало
-    final int[] images2 = {
-            R.drawable.escape,
-            R.drawable.rav4,
-            R.drawable.qashqai,
+    final int[] images3 = {
             R.drawable.corolla,
+            R.drawable.qashqai,
+            R.drawable.escape,
+            R.drawable.elantra,
             R.drawable.crv,
             R.drawable.civic,
-            R.drawable.elantra,
             R.drawable.sonata,
+            R.drawable.rav4,
             R.drawable.optima,
             R.drawable.tiguan,
     };
 
-    final int[] texts2 = {
+    final int[] texts3 = {
             R.string.lvlcarstext0,
             R.string.lvlcarstext1,
             R.string.lvlcarstext2,

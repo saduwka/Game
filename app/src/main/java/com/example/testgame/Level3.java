@@ -26,7 +26,7 @@ public class Level3 extends AppCompatActivity {
 
     public int numLeft; //Переменная для левой картинки
     public int numRight; //Переменная для правой картинки
-    Array2 array2 = new Array2(); // Создали новый объект из класса Array
+    Array3 array3 = new Array3(); // Создали новый объект из класса Array
     Random random = new Random(); // Для генерации случайных чисел
     public int count = 0; //Счетчик правильных ответов
 
@@ -125,8 +125,8 @@ public class Level3 extends AppCompatActivity {
         //Подключаем анимацию - конец
 
         numLeft = random.nextInt(10);//Генерируем случайное число
-        imgleft.setImageResource(array2.images2[numLeft]);//Достаем картинку
-        text_left.setText(array2.texts2[numLeft]);//Достаем из массива текст
+        imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку
+        text_left.setText(array3.texts2[numLeft]);//Достаем из массива текст
 
         numRight = random.nextInt(10);//Генерируем правое число
         //Цикл с предусловием, проверяющее равенство чисел - начало
@@ -134,8 +134,8 @@ public class Level3 extends AppCompatActivity {
             numRight = random.nextInt(10);
         }
         //Цикл с предусловием, проверяющее равенство чисел - конец
-        imgright.setImageResource(array2.images2[numRight]);
-        text_right.setText(array2.texts2[numRight]);
+        imgright.setImageResource(array3.images2[numRight]);
+        text_right.setText(array3.texts2[numRight]);
 
         //Обрабатываем нажатие на левую картинку - Начало
         imgleft.setOnTouchListener(new View.OnTouchListener() {
@@ -193,9 +193,9 @@ public class Level3 extends AppCompatActivity {
                         //Выход из уровня
                     }else {
                         numLeft = random.nextInt(10);//Генерируем случайное число
-                        imgleft.setImageResource(array2.images2[numLeft]);//Достаем картинку
+                        imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
-                        text_left.setText(array2.texts2[numLeft]);//Достаем из массива текст
+                        text_left.setText(array3.texts2[numLeft]);//Достаем из массива текст
 
                         numRight = random.nextInt(10);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
@@ -203,9 +203,9 @@ public class Level3 extends AppCompatActivity {
                             numRight = random.nextInt(10);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
-                        imgright.setImageResource(array2.images2[numRight]);
+                        imgright.setImageResource(array3.images2[numRight]);
                         imgright.startAnimation(a);
-                        text_right.setText(array2.texts2[numRight]);
+                        text_right.setText(array3.texts2[numRight]);
                         imgright.setEnabled(true);
                     }
                 }
@@ -270,9 +270,9 @@ public class Level3 extends AppCompatActivity {
                         //Выход из уровня
                     }else {
                         numLeft = random.nextInt(10);//Генерируем случайное число
-                        imgleft.setImageResource(array2.images2[numLeft]);//Достаем картинку
+                        imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
-                        text_left.setText(array2.texts2[numLeft]);//Достаем из массива текст
+                        text_left.setText(array3.texts2[numLeft]);//Достаем из массива текст
 
                         numRight = random.nextInt(10);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
@@ -280,9 +280,9 @@ public class Level3 extends AppCompatActivity {
                             numRight = random.nextInt(10);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
-                        imgright.setImageResource(array2.images2[numRight]);
+                        imgright.setImageResource(array3.images2[numRight]);
                         imgright.startAnimation(a);
-                        text_right.setText(array2.texts2[numRight]);
+                        text_right.setText(array3.texts2[numRight]);
                         imgleft.setEnabled(true);
                     }
                 }

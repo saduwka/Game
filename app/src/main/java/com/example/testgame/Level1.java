@@ -126,7 +126,7 @@ public class Level1 extends AppCompatActivity {
         Button btncontinue2 = (Button)dialogEnd.findViewById(R.id.btncontinue);
         btncontinue2.setOnClickListener(v ->  {
             try {
-                Intent intent = new Intent(Level1.this, Level3.class);
+                Intent intent = new Intent(Level1.this, Level2.class);
                 startActivity(intent);
                 finish();
             }catch (Exception e){
