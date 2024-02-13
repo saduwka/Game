@@ -3,6 +3,7 @@
     <string name="start">Start</string>
     <string name="back">Back</string>
     <string name="level">Level:</string>
+    <string name="level_description1">У кого меньше разгон от 0км/ч до 100км/ч?</string>
     <string name="level_description2">У кого больше максимальная скорость?</string>
     <string name="level_description3">У кого больше лошадинных сил?</string>
     <string name="level1">Level 1:</string>

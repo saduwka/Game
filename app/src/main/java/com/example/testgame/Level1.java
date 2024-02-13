@@ -39,6 +39,9 @@ public class Level1 extends AppCompatActivity {
         //Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
         text_levels.setText(R.string.level1); //Установили текст
+        //Текст описание уровня
+        TextView text_levels_description = findViewById(R.id.text_levels_description);
+        text_levels_description.setText(R.string.level_description1);
 
         final ImageView imgleft = (ImageView)findViewById(R.id.imgleft);
         //round corner
