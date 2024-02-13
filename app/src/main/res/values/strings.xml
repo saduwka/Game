@@ -12,4 +12,5 @@
     <string name="level4">Level 4</string>
     <string name="x">hi</string>
     <string name="textcontinue">Continue</string>
+    <string name="question_pixel">Здесь будет вопрос</string>
 </resources>

@@ -74,6 +74,20 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
+        TextView textView30 = (TextView) findViewById(R.id.textView30);
+        textView30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, pixel_level.class);
+                    startActivity(intent);
+                    finish();
+
+                }catch (Exception e) {
+                }
+            }
+        });
+
 
     }
     //Системная кнопка
