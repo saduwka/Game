@@ -23,6 +23,7 @@ import java.util.Random;
 public class Level3 extends AppCompatActivity {
 
     Dialog dialog;
+    Dialog dialogEnd2;
 
     public int numLeft; //Переменная для левой картинки
     public int numRight; //Переменная для правой картинки
@@ -37,7 +38,11 @@ public class Level3 extends AppCompatActivity {
 
         //Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1); //Установили текст
+        text_levels.setText(R.string.level3); //Установили текст название уровня
+
+        //Текст описание уровня
+        TextView text_levels_description = findViewById(R.id.text_levels_description);
+        text_levels_description.setText(R.string.level_description3);
 
         final ImageView imgleft = (ImageView)findViewById(R.id.imgleft);
         //round corner
@@ -89,6 +94,52 @@ public class Level3 extends AppCompatActivity {
             }
         });
         //Кнопка "Продолжить" - Конец
+        //Вызов диалогового окна в конце игры
+        //Dialog end window
+        dialogEnd2 = new Dialog(this); //создаем окно
+        dialogEnd2.requestWindowFeature(Window.FEATURE_NO_TITLE); //Скрываем заголовок
+        dialogEnd2.setContentView(R.layout.dialogend2); //Путь к макету
+        dialogEnd2.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));// Прозрачный фон
+        dialogEnd2.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.MATCH_PARENT);
+        dialogEnd2.setCancelable(false); //Кнопка назад откл
+        //Кнопка которая закрывает диалоговое окно - Начало
+        TextView btnclose2 = (TextView)dialogEnd2.findViewById(R.id.btnclose);
+        btnclose2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Обрабатываем нажатие кнопки - Начало
+                try {
+                    //Вернуться назад к выбору уровней - Начало
+                    Intent intent = new Intent(Level3.this, GameLevels.class);//Создали намерение для перехода
+                    startActivity(intent);//Старт намерения
+                    finish();//закрыть этот класс
+                    //Вернуться назад к выбору уровней - Конец
+                }catch (Exception e) {
+                    //Здесь кода не будет
+                }
+                dialogEnd2.dismiss();//Закрываем окно
+                //Обрабатываем нажатие кнопки - Конец
+            }
+        });
+        //Кнопка которая закрывает диалоговое окно - Конец
+
+
+        //Кнопка "Продолжить" - Начало
+        Button btncontinue2 = (Button)dialogEnd2.findViewById(R.id.btncontinue);
+        btncontinue2.setOnClickListener(v ->  {
+            try {
+                Intent intent = new Intent(Level3.this, Level4.class);
+                startActivity(intent);
+                finish();
+            }catch (Exception e){
+                //Здесь кода не будет
+            }
+
+            dialogEnd2.dismiss(); //Закрываем диалоговое окно
+        });
+        //Кнопка "Продолжить" - Конец
+
 
         dialog.show();// Показать окно
         //Кнопка "Назад" - Начало
@@ -124,14 +175,14 @@ public class Level3 extends AppCompatActivity {
         final Animation a = AnimationUtils.loadAnimation(Level3.this, R.anim.alpha);
         //Подключаем анимацию - конец
 
-        numLeft = random.nextInt(10);//Генерируем случайное число
+        numLeft = random.nextInt(20);//Генерируем случайное число
         imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку
         text_left.setText(array3.texts2[numLeft]);//Достаем из массива текст
 
-        numRight = random.nextInt(10);//Генерируем правое число
+        numRight = random.nextInt(20);//Генерируем правое число
         //Цикл с предусловием, проверяющее равенство чисел - начало
         while (numLeft==numRight){
-            numRight = random.nextInt(10);
+            numRight = random.nextInt(20);
         }
         //Цикл с предусловием, проверяющее равенство чисел - конец
         imgright.setImageResource(array3.images2[numRight]);
@@ -192,15 +243,15 @@ public class Level3 extends AppCompatActivity {
                     if (count==20){
                         //Выход из уровня
                     }else {
-                        numLeft = random.nextInt(10);//Генерируем случайное число
+                        numLeft = random.nextInt(20);//Генерируем случайное число
                         imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
                         text_left.setText(array3.texts2[numLeft]);//Достаем из массива текст
 
-                        numRight = random.nextInt(10);//Генерируем правое число
+                        numRight = random.nextInt(20);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
                         while (numLeft==numRight){
-                            numRight = random.nextInt(10);
+                            numRight = random.nextInt(20);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
                         imgright.setImageResource(array3.images2[numRight]);
@@ -269,15 +320,15 @@ public class Level3 extends AppCompatActivity {
                     if (count==20){
                         //Выход из уровня
                     }else {
-                        numLeft = random.nextInt(10);//Генерируем случайное число
+                        numLeft = random.nextInt(20);//Генерируем случайное число
                         imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
                         text_left.setText(array3.texts2[numLeft]);//Достаем из массива текст
 
-                        numRight = random.nextInt(10);//Генерируем правое число
+                        numRight = random.nextInt(20);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
                         while (numLeft==numRight){
-                            numRight = random.nextInt(10);
+                            numRight = random.nextInt(20);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
                         imgright.setImageResource(array3.images2[numRight]);

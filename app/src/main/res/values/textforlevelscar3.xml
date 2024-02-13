@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="lvlcarstext00">Ford Escape 2.3 AT Limited</string>
-    <string name="lvlcarstext11">Toyota RAV4 4WD</string>
-    <string name="lvlcarstext22">Nissan Qashqai 2.0 CVT 4WD SV</string>
+    <string name="lvlcarstext30">Ford Escape 2.3 AT Limited</string>
+    <string name="lvlcarstext31">Toyota RAV4 4WD</string>
+    <string name="lvlcarstext32">Nissan Qashqai 2.0 CVT 4WD SV</string>
     <string name="lvlcarstext33">Toyota Corolla 1.6 CVT Престиж Safety</string>
-    <string name="lvlcarstext44">Honda CR-V</string>
-    <string name="lvlcarstext55">Honda Civic Cedan DX</string>
-    <string name="lvlcarstext66">Hyundai Elantra 2.0 AT Active</string>
-    <string name="lvlcarstext77">Hyundai Sonata 2.5 MPI AT Way</string>
-    <string name="lvlcarstext88">Kia Optima 2.4 AT Prestige</string>
-    <string name="lvlcarstext99">Volkswagen Tiguan 2.0 TSI DSG Sport</string>
+    <string name="lvlcarstext34">Honda CR-V</string>
+    <string name="lvlcarstext35">Honda Civic Cedan DX</string>
+    <string name="lvlcarstext36">Hyundai Elantra 2.0 AT Active</string>
+    <string name="lvlcarstext37">Hyundai Sonata 2.5 MPI AT Way</string>
+    <string name="lvlcarstext38">Kia Optima 2.4 AT Prestige</string>
+    <string name="lvlcarstext39">Volkswagen Tiguan 2.0 TSI DSG Sport</string>
+    <string name="lvlcarstext310">Nissan Juke 1.6T MT 2WD Nismo RS</string>
+    <string name="lvlcarstext311">Toyota Camry 3.5 AT Luxe</string>
+    <string name="lvlcarstext312">Honda Accord 3.5 AT Premium</string>
+    <string name="lvlcarstext313">Lexus IS300 3.0 AT</string>
+    <string name="lvlcarstext314">Subaru Outback 3.6R-S CVT ZN Premium+</string>
+    <string name="lvlcarstext315">Volkswagen Golf 2.0 TSI DSG GTI</string>
+    <string name="lvlcarstext316">BMW 3-Series 335i AT</string>
+    <string name="lvlcarstext317">Chevrolet Silverado 3500 HD</string>
+    <string name="lvlcarstext318">Audi A4 3.0 TFSI quattro S Tronic</string>
+    <string name="lvlcarstext319">Ford F150 3.5 AT 4x4</string>
 </resources>

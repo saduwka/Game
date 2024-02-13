@@ -38,26 +38,40 @@
                     android:id="@+id/button_back_level1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:background="@drawable/button_stroke_white_press_blue"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
+                    android:layout_gravity="center"
                     android:text="@string/back"
                     android:textColor="@color/white"
                     android:textSize="24sp"
 
+
                     />
+
+                <TextView
+                    android:id="@+id/text_levels_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/level_description2"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/text_levels"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_gravity="center"
                     android:gravity="right"
                     android:padding="10dp"
                     android:text="@string/level"
                     android:textColor="@color/white"
-                    android:textSize="24sp" />
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -217,7 +231,7 @@
                 android:gravity="center"
                 android:text="Text Left"
                 android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textSize="24sp" />
 
             <ImageView
                 android:id="@+id/imgleft"
@@ -260,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:text="Text Right"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="24sp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:gravity="center"/>

@@ -9,5 +9,15 @@
     <string name="lvlcarstext6">Hyundai Sonata 2.5 MPI AT Way</string>
     <string name="lvlcarstext7">Toyota RAV4 4WD</string>
     <string name="lvlcarstext8">Kia Optima 2.4 AT Prestige</string>
-    <string name="lvlcarstext9">Volkswagen Tiguan 2.0 TSI DSG Sport</string>
+    <string name="lvlcarstext9">Volkswagen Golf 2.0 TSI DSG GTI</string>
+    <string name="lvlcarstext10">Volkswagen Tiguan 2.0 TSI DSG Sport</string>
+    <string name="lvlcarstext11">Lexus IS300 3.0 AT</string>
+    <string name="lvlcarstext12">Nissan Juke 1.6T MT 2WD Nismo RS</string>
+    <string name="lvlcarstext13">Subaru Outback 3.6R-S CVT ZN Premium+</string>
+    <string name="lvlcarstext14">Audi A4 3.0 TFSI quattro S Tronic</string>
+    <string name="lvlcarstext15">Toyota Camry 3.5 AT Luxe</string>
+    <string name="lvlcarstext16">Honda Accord 3.5 AT Premium</string>
+    <string name="lvlcarstext17">BMW 3-Series 335i AT</string>
+    <string name="lvlcarstext18">Ford F150 3.5 AT 4x4</string>
+    <string name="lvlcarstext19">Chevrolet Silverado 3500 HD</string>
 </resources>
