@@ -8,7 +8,16 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class pixel_level extends AppCompatActivity {
+
+    Array Pixel30 = new Array();
+
+    private int correctAnswerIndex = 4; // Предположим, что правильный ответ находится в списке под индексом 2
+    private ArrayList<Pixel30> answers; // Список вариантов ответа
+
     public int pixelImg;
 
         public int count = 0; //Счетчик правильных ответов
@@ -30,11 +39,13 @@ public class pixel_level extends AppCompatActivity {
         questionImageView.setImageResource(R.drawable.camrypxl); // Замените your_image на имя вашего изображения в ресурсах
         questionTextView.setText("Что на картинке?");
 
+        // Создаем список с вариантами ответа
+
+
+        Collections.shuffle(answers);
+
         // Установка текста на кнопках с вариантами ответа
-        answerButton1.setText("Ответ 1");
-        answerButton2.setText("Ответ 2");
-        answerButton3.setText("Ответ 3");
-        answerButton4.setText("Ответ 4");
+
 
         // Обработка нажатий на кнопки с вариантами ответа
         answerButton1.setOnClickListener(new View.OnClickListener() {

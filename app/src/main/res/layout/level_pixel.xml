@@ -236,7 +236,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgtest" />
+                    android:src="@drawable/camrypxl" />
 
             </LinearLayout>
 
@@ -248,22 +248,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/answerButton1"
+                android:text="@string/leveltext31"
                 />
 
                 <Button
                     android:id="@+id/answerButton2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/leveltext32"/>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/answerButton3"
+                    android:text="@string/leveltext33"
                     />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/answerButton4"
+                    android:text="@string/leveltext34"
                     />
             </LinearLayout>
 
