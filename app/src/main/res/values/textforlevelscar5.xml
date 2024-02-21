@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvlcarstext50">Nissan Juke 1.6T MT 2WD Nismo RS</string>
+    <string name="lvlcarstext51">Volkswagen Golf 2.0 TSI DSG GTI</string>
+    <string name="lvlcarstext52">Lexus IS300 3.0 AT</string>
+    <string name="lvlcarstext53">Nissan Qashqai 2.0 CVT 4WD SV</string>
+    <string name="lvlcarstext54">Honda Civic Cedan DX</string>
+    <string name="lvlcarstext55">Honda CR-V</string>
+    <string name="lvlcarstext56">Toyota Corolla 1.6 CVT Престиж Safety</string>
+    <string name="lvlcarstext57">Hyundai Elantra 2.0 AT Active</string>
+    <string name="lvlcarstext58">Audi A4 3.0 TFSI quattro S Tronic</string>
+    <string name="lvlcarstext59">BMW 3-Series 335i AT</string>
+    <string name="lvlcarstext510">Honda Accord 3.5 AT Premium</string>
+    <string name="lvlcarstext511">Toyota RAV4 4WD</string>
+    <string name="lvlcarstext512">Kia Optima 2.4 AT Prestige</string>
+    <string name="lvlcarstext513">Hyundai Sonata 2.5 MPI AT Way</string>
+    <string name="lvlcarstext514">Toyota Camry 3.5 AT Luxe</string>
+    <string name="lvlcarstext515">Volkswagen Tiguan 2.0 TSI DSG Sport</string>
+    <string name="lvlcarstext516">Ford Escape 2.3 AT Limited</string>
+    <string name="lvlcarstext517">Subaru Outback 3.6R-S CVT ZN Premium+</string>
+    <string name="lvlcarstext518">Ford F150 3.5 AT 4x4</string>
+    <string name="lvlcarstext519">Chevrolet Silverado 3500 HD</string>
+</resources>

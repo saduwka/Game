@@ -244,30 +244,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/answerButton1"
-                android:text="@string/leveltext31"
-                />
+
+                <Button
+                    android:id="@+id/answerButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_back"
+                    android:text="@string/leveltext31"
+                    android:layout_margin="5dp"/>
 
                 <Button
                     android:id="@+id/answerButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/leveltext32"/>
+                    android:background="@color/btn_back"
+                    android:text="@string/leveltext32"
+                    android:layout_margin="5dp"/>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/btn_back"
                     android:id="@+id/answerButton3"
                     android:text="@string/leveltext33"
+                    android:layout_margin="5dp"
                     />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/btn_back"
                     android:id="@+id/answerButton4"
                     android:text="@string/leveltext34"
+                    android:layout_margin="5dp"
                     />
             </LinearLayout>
 

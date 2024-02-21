@@ -33,7 +33,7 @@ public class GameLevels extends AppCompatActivity {
             }
         });
 
-        //Button Level 1 - start
+        //Кнопка уровень 1
         TextView textView1 = (TextView) findViewById(R.id.textView1);
         textView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +48,7 @@ public class GameLevels extends AppCompatActivity {
             }
         });
         //Button Level 1 - finish
+        //Кнопка уровень 2
         TextView textView2 = (TextView) findViewById(R.id.textView2);
         textView2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +62,7 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
+        //Кнопка уровень 3
         TextView textView3 = (TextView) findViewById(R.id.textView3);
         textView3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +72,32 @@ public class GameLevels extends AppCompatActivity {
                     startActivity(intent);
                     finish();
 
+                }catch (Exception e) {
+                }
+            }
+        });
+        //Кнопка уровень 4
+        TextView textView4 = (TextView) findViewById(R.id.textView4);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level4.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e) {
+                }
+            }
+        });
+        //Кнопка уровень 5
+        TextView textView5 = (TextView) findViewById(R.id.textView5);
+        textView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level5.class);
+                    startActivity(intent);
+                    finish();
                 }catch (Exception e) {
                 }
             }
@@ -86,21 +114,6 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
-
-        TextView textView30 = (TextView) findViewById(R.id.textView30);
-        textView30.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(GameLevels.this, pixel_level.class);
-                    startActivity(intent);
-                    finish();
-
-                }catch (Exception e) {
-                }
-            }
-        });
-
 
 
     }

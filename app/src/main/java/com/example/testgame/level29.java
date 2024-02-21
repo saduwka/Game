@@ -1,6 +1,8 @@
 package com.example.testgame;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -13,10 +15,33 @@ public class level29 extends AppCompatActivity {
         private Button answerButton1, answerButton2, answerButton3, answerButton4;
         private ImageView questionImageView;
 
+        Handler handler = new Handler();
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.level_pixel);
+
+            //Кнопка "Назад" - Начало
+            Button btn_back = (Button) findViewById(R.id.button_back_level1);
+            btn_back.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //Обработка нажатия - Начало
+                    try {
+                        //Вернуться к выбору уровней - Начало
+                        Intent intent = new Intent(level29.this, GameLevels.class);
+                        startActivity(intent);
+                        finish();
+                        //Вернуться к выбору уровней - Конец
+                    }catch (Exception e) {
+
+                    }
+                    //Обработка нажатия - Конец
+                }
+            });
+            //Кнопка "Назад" - Конец
+
 
             // Находим кнопки ответов и изображение по их id
             answerButton1 = findViewById(R.id.answerButton1);
@@ -81,6 +106,25 @@ public class level29 extends AppCompatActivity {
                         answerButton3.setBackgroundResource(R.drawable.button_background_incorrect);
                         break;
                 }
+                // Создаем Handler
+               // Устанавливаем задержку в 3 секунды
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Возвращаем цвет кнопки на исходный
+                        switch (selectedAnswer) {
+                            case 1:
+                                answerButton1.setBackgroundResource(R.color.btn_back);
+                                break;
+                            case 2:
+                                answerButton2.setBackgroundResource(R.color.btn_back);
+                                break;
+                            case 3:
+                                answerButton3.setBackgroundResource(R.color.btn_back);
+                                break;
+                        }
+                    }
+                }, 1000); // 1000 миллисекунд = 1 секунды
             }
         }
     }

@@ -6,4 +6,5 @@
     <color name="blue">#48d1ff</color>
     <color name="green">#9019FF19</color>
     <color name="red">#FF0000</color>
+    <color name="btn_back">#BFFFFFFF</color>
 </resources>
