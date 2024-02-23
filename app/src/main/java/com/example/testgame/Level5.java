@@ -129,7 +129,7 @@ public class Level5 extends AppCompatActivity {
         Button btncontinue2 = (Button)dialogEnd2.findViewById(R.id.btncontinue);
         btncontinue2.setOnClickListener(v ->  {
             try {
-                Intent intent = new Intent(Level5.this, Level5.class);
+                Intent intent = new Intent(Level5.this, Level6.class);
                 startActivity(intent);
                 finish();
             }catch (Exception e){
@@ -175,14 +175,14 @@ public class Level5 extends AppCompatActivity {
         final Animation a = AnimationUtils.loadAnimation(Level5.this, R.anim.alpha);
         //Подключаем анимацию - конец
 
-        numLeft = random.nextInt(10);//Генерируем случайное число
+        numLeft = random.nextInt(20);//Генерируем случайное число
         imgleft.setImageResource(array5.images2[numLeft]);//Достаем картинку
         text_left.setText(array5.texts2[numLeft]);//Достаем из массива текст
 
-        numRight = random.nextInt(10);//Генерируем правое число
+        numRight = random.nextInt(20);//Генерируем правое число
         //Цикл с предусловием, проверяющее равенство чисел - начало
         while (numLeft==numRight){
-            numRight = random.nextInt(10);
+            numRight = random.nextInt(20);
         }
         //Цикл с предусловием, проверяющее равенство чисел - конец
         imgright.setImageResource(array5.images2[numRight]);
@@ -242,16 +242,17 @@ public class Level5 extends AppCompatActivity {
                     }
                     if (count==20){
                         //Выход из уровня
+                        dialogEnd2.show();
                     }else {
-                        numLeft = random.nextInt(10);//Генерируем случайное число
+                        numLeft = random.nextInt(20);//Генерируем случайное число
                         imgleft.setImageResource(array5.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
                         text_left.setText(array5.texts2[numLeft]);//Достаем из массива текст
 
-                        numRight = random.nextInt(10);//Генерируем правое число
+                        numRight = random.nextInt(20);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
                         while (numLeft==numRight){
-                            numRight = random.nextInt(10);
+                            numRight = random.nextInt(20);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
                         imgright.setImageResource(array5.images2[numRight]);
@@ -319,16 +320,17 @@ public class Level5 extends AppCompatActivity {
                     }
                     if (count==20){
                         //Выход из уровня
+                        dialogEnd2.show();
                     }else {
-                        numLeft = random.nextInt(10);//Генерируем случайное число
+                        numLeft = random.nextInt(20);//Генерируем случайное число
                         imgleft.setImageResource(array5.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
                         text_left.setText(array5.texts2[numLeft]);//Достаем из массива текст
 
-                        numRight = random.nextInt(10);//Генерируем правое число
+                        numRight = random.nextInt(20);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
                         while (numLeft==numRight){
-                            numRight = random.nextInt(10);
+                            numRight = random.nextInt(20);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
                         imgright.setImageResource(array5.images2[numRight]);

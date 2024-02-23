@@ -89,7 +89,7 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
-        //Кнопка уровень 5
+//Кнопка уровень 4
         TextView textView5 = (TextView) findViewById(R.id.textView5);
         textView5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +102,72 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
+        //Кнопка уровень 6
+        TextView textView6 = (TextView) findViewById(R.id.textView6);
+        textView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level6.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e) {
+                }
+            }
+        });
+        //Кнопка уровень 7
+        TextView textView7 = (TextView) findViewById(R.id.textView7);
+        textView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level7.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e) {
+                }
+            }
+        });
+        //Кнопка уровень 8
+        TextView textView8 = (TextView) findViewById(R.id.textView8);
+        textView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level8.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e) {
+                }
+            }
+        });
+        //Кнопка уровень 9
+        TextView textView9 = (TextView) findViewById(R.id.textView9);
+        textView9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level9.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e) {
+                }
+            }
+        });
+        //Кнопка уровень 10
+        TextView textView10 = (TextView) findViewById(R.id.textView10);
+        textView10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level10.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e) {
+                }
+            }
+        });
+        //Кнопка уровень 29
         TextView textView29 = (TextView) findViewById(R.id.textView29);
         textView29.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -45,7 +45,7 @@
                     android:layout_gravity="center"
                     android:text="@string/back"
                     android:textColor="@color/white"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
 
 
                     />
@@ -71,7 +71,7 @@
                     android:padding="10dp"
                     android:text="@string/level"
                     android:textColor="@color/white"
-                    android:textSize="22sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -237,7 +237,7 @@
                 android:id="@+id/imgleft"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
-                android:layout_marginRight="5dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/style_img_universal"
                 android:scaleType="centerCrop"
@@ -254,7 +254,7 @@
                     android:id="@+id/imgright"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"

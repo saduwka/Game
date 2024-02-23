@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvlcarstext20">Ford Escape 2.3 AT Limited</string>
+    <string name="lvlcarstext21">Toyota RAV4 4WD</string>
+    <string name="lvlcarstext22">Nissan Qashqai 2.0 CVT 4WD SV</string>
+    <string name="lvlcarstext23">Toyota Corolla 1.6 CVT Престиж Safety</string>
+    <string name="lvlcarstext24">Honda CR-V</string>
+    <string name="lvlcarstext25">Honda Civic Cedan DX</string>
+    <string name="lvlcarstext26">Hyundai Elantra 2.0 AT Active</string>
+    <string name="lvlcarstext27">Hyundai Sonata 2.5 MPI AT Way</string>
+    <string name="lvlcarstext28">Kia Optima 2.4 AT Prestige</string>
+    <string name="lvlcarstext29">Volkswagen Tiguan 2.0 TSI DSG Sport</string>
+    <string name="lvlcarstext210">Nissan Juke 1.6T MT 2WD Nismo RS</string>
+    <string name="lvlcarstext211">Toyota Camry 3.5 AT Luxe</string>
+    <string name="lvlcarstext212">Honda Accord 3.5 AT Premium</string>
+    <string name="lvlcarstext213">Lexus IS300 3.0 AT</string>
+    <string name="lvlcarstext214">Subaru Outback 3.6R-S CVT ZN Premium+</string>
+    <string name="lvlcarstext215">Volkswagen Golf 2.0 TSI DSG GTI</string>
+    <string name="lvlcarstext216">BMW 3-Series 335i AT</string>
+    <string name="lvlcarstext217">Audi A4 3.0 TFSI quattro S Tronic</string>
+    <string name="lvlcarstext218">Chevrolet Silverado 3500 HD</string>
+    <string name="lvlcarstext219">Ford F150 3.5 AT 4x4</string>
+</resources>

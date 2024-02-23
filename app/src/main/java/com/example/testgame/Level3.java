@@ -242,6 +242,7 @@ public class Level3 extends AppCompatActivity {
                     }
                     if (count==20){
                         //Выход из уровня
+                        dialogEnd2.show();
                     }else {
                         numLeft = random.nextInt(20);//Генерируем случайное число
                         imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку
@@ -319,6 +320,7 @@ public class Level3 extends AppCompatActivity {
                     }
                     if (count==20){
                         //Выход из уровня
+                        dialogEnd2.show();
                     }else {
                         numLeft = random.nextInt(20);//Генерируем случайное число
                         imgleft.setImageResource(array3.images2[numLeft]);//Достаем картинку

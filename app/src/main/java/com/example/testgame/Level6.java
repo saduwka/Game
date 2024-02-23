@@ -20,14 +20,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class Level4 extends AppCompatActivity {
+public class Level6 extends AppCompatActivity {
 
     Dialog dialog;
     Dialog dialogEnd2;
 
     public int numLeft; //Переменная для левой картинки
     public int numRight; //Переменная для правой картинки
-    Array4 array4 = new Array4(); // Создали новый объект из класса Array
+    Array6 array6 = new Array6(); // Создали новый объект из класса Array
     Random random = new Random(); // Для генерации случайных чисел
     public int count = 0; //Счетчик правильных ответов
 
@@ -38,11 +38,11 @@ public class Level4 extends AppCompatActivity {
 
         //Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level4); //Установили текст название уровня
+        text_levels.setText(R.string.level6); //Установили текст название уровня
 
         //Текст описание уровня
         TextView text_levels_description = findViewById(R.id.text_levels_description);
-        text_levels_description.setText(R.string.level_description4);
+        text_levels_description.setText(R.string.level_description6);
 
         final ImageView imgleft = (ImageView)findViewById(R.id.imgleft);
         //round corner
@@ -60,7 +60,7 @@ public class Level4 extends AppCompatActivity {
         //Dialog window
         dialog = new Dialog(this); //создаем окно
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //Скрываем заголовок
-        dialog.setContentView(R.layout.previewdialog4); //Путь к макету
+        dialog.setContentView(R.layout.previewdialog6); //Путь к макету
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));// Прозрачный фон
         dialog.setCancelable(false); //Кнопка назад откл
         //Кнопка которая закрывает диалоговое окно - Начало
@@ -71,7 +71,7 @@ public class Level4 extends AppCompatActivity {
                 //Обрабатываем нажатие кнопки - Начало
                 try {
                     //Вернуться назад к выбору уровней - Начало
-                    Intent intent = new Intent(Level4.this, GameLevels.class);//Создали намерение для перехода
+                    Intent intent = new Intent(Level6.this, GameLevels.class);//Создали намерение для перехода
                     startActivity(intent);//Старт намерения
                     finish();//закрыть этот класс
                     //Вернуться назад к выбору уровней - Конец
@@ -111,7 +111,7 @@ public class Level4 extends AppCompatActivity {
                 //Обрабатываем нажатие кнопки - Начало
                 try {
                     //Вернуться назад к выбору уровней - Начало
-                    Intent intent = new Intent(Level4.this, GameLevels.class);//Создали намерение для перехода
+                    Intent intent = new Intent(Level6.this, GameLevels.class);//Создали намерение для перехода
                     startActivity(intent);//Старт намерения
                     finish();//закрыть этот класс
                     //Вернуться назад к выбору уровней - Конец
@@ -129,7 +129,7 @@ public class Level4 extends AppCompatActivity {
         Button btncontinue2 = (Button)dialogEnd2.findViewById(R.id.btncontinue);
         btncontinue2.setOnClickListener(v ->  {
             try {
-                Intent intent = new Intent(Level4.this, Level5.class);
+                Intent intent = new Intent(Level6.this, Level7.class);
                 startActivity(intent);
                 finish();
             }catch (Exception e){
@@ -150,7 +150,7 @@ public class Level4 extends AppCompatActivity {
                 //Обработка нажатия - Начало
                 try {
                     //Вернуться к выбору уровней - Начало
-                    Intent intent = new Intent(Level4.this, GameLevels.class);
+                    Intent intent = new Intent(Level6.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                     //Вернуться к выбору уровней - Конец
@@ -172,12 +172,12 @@ public class Level4 extends AppCompatActivity {
 
 
         //Подключаем анимацию - начало
-        final Animation a = AnimationUtils.loadAnimation(Level4.this, R.anim.alpha);
+        final Animation a = AnimationUtils.loadAnimation(Level6.this, R.anim.alpha);
         //Подключаем анимацию - конец
 
         numLeft = random.nextInt(20);//Генерируем случайное число
-        imgleft.setImageResource(array4.images2[numLeft]);//Достаем картинку
-        text_left.setText(array4.texts2[numLeft]);//Достаем из массива текст
+        imgleft.setImageResource(array6.images2[numLeft]);//Достаем картинку
+        text_left.setText(array6.texts2[numLeft]);//Достаем из массива текст
 
         numRight = random.nextInt(20);//Генерируем правое число
         //Цикл с предусловием, проверяющее равенство чисел - начало
@@ -185,8 +185,8 @@ public class Level4 extends AppCompatActivity {
             numRight = random.nextInt(20);
         }
         //Цикл с предусловием, проверяющее равенство чисел - конец
-        imgright.setImageResource(array4.images2[numRight]);
-        text_right.setText(array4.texts2[numRight]);
+        imgright.setImageResource(array6.images2[numRight]);
+        text_right.setText(array6.texts2[numRight]);
 
         //Обрабатываем нажатие на левую картинку - Начало
         imgleft.setOnTouchListener(new View.OnTouchListener() {
@@ -245,9 +245,9 @@ public class Level4 extends AppCompatActivity {
                         dialogEnd2.show();
                     }else {
                         numLeft = random.nextInt(20);//Генерируем случайное число
-                        imgleft.setImageResource(array4.images2[numLeft]);//Достаем картинку
+                        imgleft.setImageResource(array6.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
-                        text_left.setText(array4.texts2[numLeft]);//Достаем из массива текст
+                        text_left.setText(array6.texts2[numLeft]);//Достаем из массива текст
 
                         numRight = random.nextInt(20);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
@@ -255,9 +255,9 @@ public class Level4 extends AppCompatActivity {
                             numRight = random.nextInt(20);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
-                        imgright.setImageResource(array4.images2[numRight]);
+                        imgright.setImageResource(array6.images2[numRight]);
                         imgright.startAnimation(a);
-                        text_right.setText(array4.texts2[numRight]);
+                        text_right.setText(array6.texts2[numRight]);
                         imgright.setEnabled(true);
                     }
                 }
@@ -323,9 +323,9 @@ public class Level4 extends AppCompatActivity {
                         dialogEnd2.show();
                     }else {
                         numLeft = random.nextInt(20);//Генерируем случайное число
-                        imgleft.setImageResource(array4.images2[numLeft]);//Достаем картинку
+                        imgleft.setImageResource(array6.images2[numLeft]);//Достаем картинку
                         imgleft.startAnimation(a);
-                        text_left.setText(array4.texts2[numLeft]);//Достаем из массива текст
+                        text_left.setText(array6.texts2[numLeft]);//Достаем из массива текст
 
                         numRight = random.nextInt(20);//Генерируем правое число
                         //Цикл с предусловием, проверяющее равенство чисел - начало
@@ -333,9 +333,9 @@ public class Level4 extends AppCompatActivity {
                             numRight = random.nextInt(20);
                         }
                         //Цикл с предусловием, проверяющее равенство чисел - конец
-                        imgright.setImageResource(array4.images2[numRight]);
+                        imgright.setImageResource(array6.images2[numRight]);
                         imgright.startAnimation(a);
-                        text_right.setText(array4.texts2[numRight]);
+                        text_right.setText(array6.texts2[numRight]);
                         imgleft.setEnabled(true);
                     }
                 }
@@ -355,7 +355,7 @@ public class Level4 extends AppCompatActivity {
         super.onBackPressed();
         try {
             //Вернуться к выбору уровней - Начало
-            Intent intent = new Intent(Level4.this, GameLevels.class);
+            Intent intent = new Intent(Level6.this, GameLevels.class);
             startActivity(intent);
             finish();
             //Вернуться к выбору уровней - Конец
